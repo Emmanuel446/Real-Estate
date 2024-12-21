@@ -1,0 +1,315 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>real estate</title>
+
+        <!-- Font Awesome (add this to your <head>) -->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+        
+        <!-- owl carousel -->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css" />
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css" />        
+        
+        <!-- fonts // Monserrat & Roboto -->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+        
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+        
+        <!-- css main file -->
+        <link rel="stylesheet" href="css/index.css">
+        
+        <!-- AOS CSS animation -->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css">
+        <!-- AOS JavaScript animation -->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
+
+    </head>
+    <body>
+        <!-- JS to prevent page from scrolling into ...
+        second section when i reload page or open page -->
+
+
+        <main>
+            
+            <div class="nav2" id="nav2">
+                <i class="fa fa-bars" onclick="myfuncX()" aria-hidden="true" id="menu"></i>
+
+                <a class="logo" href="#home">
+                    <h3>LOGO</h3>
+                </a>
+            </div>
+            <div class="nav" id="nav">
+                <ul>
+                    <a class="logo" href="#home">
+                        <h3>LOGO</h3>
+                    </a>
+
+                    <img src="imgs/close.png" onclick="myfuncY()" alt="" id="close">
+
+                    <div class="center">
+                        <li><a class="active" href="#home">Home</a></li>
+                        <li class="dropdown">
+                            <a href="#" class="drop-btn">Properties </a>
+                            <div class="dropdown-links">
+                                <a href="#">Buy</a>
+                                <a href="#">Rent</a>
+                                <a href="#">Lease</a>
+                            </div>
+                        </li>
+        
+                        
+                        <li><a href="#">Location</a></li>
+                        <li><a href="#">About Us</a></li>
+                    </div>
+                    
+                    <div class="right">
+                        <li><a href="#">Login</a></li>
+                    </div>
+                    
+                </ul>
+            </div>
+
+            <!-- Hero section -->
+
+            <section class="hero">
+                <div class="container col-12 col-md-12 col-sm-12">
+                    <div class="child">
+                        <div class="txt">
+                            <h1>YOUR DREAM HOME</h1>
+                            <h2>FOR SALE, RENT & LEASE</h2>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Similique alias optio earum excepturi molestias, quos necessitatibus. Corrupti ut nulla ratione voluptatem!</p>
+                            <button>READ MORE</button><a href="#">See all Properties</a>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            
+            
+            <!-- services section -->
+            <section class="service col-12 col-md-12 col-sm-12">
+                <div class="service-wrapper col-12 col-md-12 col-sm-12">
+                    <div class="our-services col-12 col-md-12 col-sm-12">
+                        <h1>Our Services</h1>
+                        <hr>
+                    </div>
+                    <a href="#" class="service-item col-3 col-md-3 col-sm-1" data-aos="fade-up" data-aos-delay="300" data-aos-easing="ease-in" data-aos-duration="500">
+                        <div class="image-div">
+                                <img src="imgs/buy2.png" alt="Buy.png">
+                        </div>
+                        <div class="text">
+                            <h2>Buy</h2>
+                            <p>Our agents are among the most experienced in the industry and can help you win in today’s market</p>
+                            <button>Find an agent</button>
+                        </div>
+                    </a>
+                    <a href="#" class="service-item col-3 col-md-3 col-sm-1" data-aos="fade-up" data-aos-delay="300" data-aos-easing="ease-in" data-aos-duration="800">
+                        <div class="image-div">
+                            <img src="imgs/sell-house4.png" alt="sell.png">
+                        </div>
+                        <div class="text">
+                            <h2>Sell</h2>
+                            <p>We expertly price, market, and sell your home for top dollar—all at half the listing fee.</p>
+                            <button>Learn more</button>
+                        </div>
+                    </a>
+                    <a href="#" class="service-item col-3 col-md-3 col-sm-1" data-aos="fade-up" data-aos-delay="300" data-aos-easing="ease-in" data-aos-duration="1000">
+                        <div class="image-div">
+                            <img src="imgs/lease-renting-2.png" alt="sell.png">
+                        </div>
+                        <div class="text">
+                            <h2>Lease</h2>
+                            <p>Searching for apartments, condos, or rentals? We make it easy to find a place you’ll love.</p>
+                            <button>Explore rentals?</button>
+                        </div>
+                    </a>
+                </div>
+            </section>
+            
+            <!-- get in touch section -->
+            <section class="get-in-touch col-12 col-md-12 col-sm-12">
+                <div class="container col-12 col-md-12 col-sm-12" data-aos="fade-up" data-aos-delay="300" data-aos-easing="ease-in" data-aos-duration="1000">
+                    <div class="git-items col-7 col-md-7 col-sm-12">
+                        <img src="imgs/lets-chat.jpg" alt="">
+                    </div>
+                    <div class="git-items git-item col-5 col-md-7 col-sm-12">
+                        <div class="text col-9 col-md-9 col-sm-9">
+                            <h1>"We Understand Your Needs, Let Us Guide You Home".</h1>
+                            <p>
+                                <i class="fa fa-circle" aria-hidden="true"></i>Ready for a stress-free real estate journey?
+                            </p>
+                            <p>
+                                <i class="fa fa-circle" aria-hidden="true"></i>Ready for a stress-free real estate journey?
+                            </p>
+                            <p>
+                                <i class="fa fa-circle" aria-hidden="true"></i>Ready for a stress-free real estate journey?
+                            </p>
+                            <button>LET'S CHAT</button>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- agents section -->
+            <section class="agents-section">
+                <div class="container col-12 col-md-12 col-sm-12">
+                   
+                    <div class="container-heading col-12 col-md-12 col-sm-12">
+                        <h1>Our Agents</h1>
+                        <hr>
+                    </div>
+
+                   <div class="agents-wrapper col-12 col-md-12 col-sm-12">
+                        <div class="agents-item  col-3 col-md-3 col-sm-4" data-aos="fade-up" data-aos-delay="300" data-aos-easing="ease-in" style="background-image: url(imgs/sales-agent-1.jpg);">
+                            <!-- <span>Sir Echem</span> -->
+                            <div class="agent-info">
+                                <p class="agent-name">Agent Name</p>
+                                <div class="social-links">
+                                    <a href="#"><i class="fa fa-whatsapp" id="social-icon-1" aria-hidden="true"></i></a>
+                                    <a href="#"><i class="fa fa-instagram" id="social-icon-2" aria-hidden="true"></i></a>
+                                    <a href="#"><i class="fa fa-facebook-square" id="social-icon-3" aria-hidden="true"></i></a>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="agents-item col-3 col-md-3 col-sm-4" data-aos="fade-up" data-aos-delay="300" data-aos-easing="ease-in" data-aos-duration="800" style="background-image: url(imgs/sales-agent-2.jpg);">
+                            <div class="agent-info">
+                                <p class="agent-name">Agent Name</p>
+                                <div class="social-links">
+                                    <a href="#"><i class="fa fa-whatsapp" id="social-icon-1" aria-hidden="true"></i></a>
+                                    <a href="#"><i class="fa fa-instagram" id="social-icon-2" aria-hidden="true"></i></a>
+                                    <a href="#"><i class="fa fa-facebook-square" id="social-icon-3" aria-hidden="true"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="agents-item col-3 col-md-3 col-sm-4" data-aos="fade-up" data-aos-delay="300" data-aos-easing="ease-in" data-aos-duration="1000" style="background-image: url(imgs/sales-agent-3.jpg)">
+                            <div class="agent-info">
+                                <p class="agent-name">Agent Name</p>
+                                <div class="social-links">
+                                    <a href="#"><i class="fa fa-whatsapp" id="social-icon-1" aria-hidden="true"></i></a>
+                                    <a href="#"><i class="fa fa-instagram" id="social-icon-2" aria-hidden="true"></i></a>
+                                    <a href="#"><i class="fa fa-facebook-square" id="social-icon-3" aria-hidden="true"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                   </div>
+
+                </div>
+            </section>
+
+            <!-- testimonial section -->
+            <section class="testimonial-section col-12 col-md-12 col-sm-12">
+                
+                <div class="container col-12 col-md-12 col-sm-12">
+
+                    <div class="box-1 col-12 col-md-12 col-sm-12" data-aos="fade-up" data-aos-delay="300" data-aos-easing="ease-in" data-aos-duration="800">
+                        <div class="txt col-12 col-md-12 col-sm-12">
+                            <h2>Testimonials</h2>
+                            <hr>
+                        </div>
+                    </div>
+    
+                    <div class="box-2 col-12 col-md-12 col-sm-12">
+    
+                        <div class="carousel-2 owl-carousel owl-theme col-12 col-md-12 col-sm-12">
+                            <div class="item"  data-aos="fade-up" data-aos-delay="300" data-aos-easing="ease-in" data-aos-duration="500">
+                                <img src="imgs/agent.png" alt="">
+                                <span class="customer-name">Ben Chiwell</span>
+                                <p>
+                                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex, sunt expedita commodi aperiam fugit dolor aspernatur labore asperiores modi veniam, iusto neque illum iste ipsum harum earum fugiat. Laudantium, neque.
+                                </p>
+                            </div>
+                            <div class="item"  data-aos="fade-up" data-aos-delay="300" data-aos-easing="ease-in" data-aos-duration="800">
+                                <img src="imgs/agent.png" alt="">
+                                <span class="customer-name">Ben Chiwell</span>
+                                <p>
+                                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex, sunt expedita commodi aperiam fugit dolor aspernatur labore asperiores modi veniam, iusto neque illum iste ipsum harum earum fugiat. Laudantium, neque.
+                                </p>
+                            </div>
+                            <div class="item" data-aos="fade-up" data-aos-delay="300" data-aos-easing="ease-in" data-aos-duration="1000">
+                                <img src="imgs/agent.png" alt="">
+                                <span class="customer-name">Ben Chiwell</span>
+                                <p>
+                                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex, sunt expedita commodi aperiam fugit dolor aspernatur labore asperiores modi veniam, iusto neque illum iste ipsum harum earum fugiat. Laudantium, neque.
+                                </p>
+                            </div>
+                        </div>
+    
+                    </div>
+                </div>
+            </section>
+
+            <!-- location -->
+
+            <section class="location col-12 col-md-12 col-sm-12">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3975.8276340755347!2d6.998372474152611!3d4.799627895175787!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1069ce9916e52ea1%3A0xb2fcd0d9cd360047!2sNIIT%20Port%20Harcourt!5e0!3m2!1sen!2sng!4v1732316089363!5m2!1sen!2sng" width="100%" height="600" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </section>
+
+            <!-- faq section -->
+            <section class="faq-section col-12 col-md-12 col-sm-12">
+                
+                <div class="heading"  data-aos="fade-up" data-aos-delay="300" data-aos-easing="ease-in" data-aos-duration="500">
+                    <h1>Frequently Asked Questions</h1>
+                </div>
+                
+                <div class="container"  data-aos="fade-up" data-aos-delay="300" data-aos-easing="ease-in" data-aos-duration="800">
+                    <div class="faq-item">
+                        <button class="faq-question">What services do you offer?
+                        <img src="imgs/plus.png" class="icon">
+                        </button>
+                        <div class="faq-answer">
+                          <p>We offer a wide range of real estate services, including buying, selling, leasing, and property management.</p>
+                        </div>
+                      </div>
+                      <div class="faq-item">
+                        <button class="faq-question">How do I schedule a property viewing?
+                        <img src="imgs/plus.png" class="icon">
+                        </button>
+                        <div class="faq-answer">
+                          <p>You can schedule a viewing through our website by clicking the "Schedule Viewing" button on the property listing page or by contacting our team directly.</p>
+                        </div>
+                      </div>
+                      <div class="faq-item">
+                        <button class="faq-question">What are the steps to buy a property?
+                        <img src="imgs/plus.png" class="icon">
+                        </button>
+                        <div class="faq-answer">
+                          <p>The process includes consulting with our agents, selecting your ideal property, securing financing, and closing the deal with legal support from our team.</p>
+                        </div>
+                      </div>
+                      <div class="faq-item">
+                        <button class="faq-question">Are virtual tours available?
+                        <img src="imgs/plus.png" class="icon">
+                        </button>
+                        <div class="faq-answer">
+                          <p>Yes, we offer virtual tours for select properties. Look for the "Virtual Tour Available" tag on the listing or contact us for more details.</p>
+                        </div>
+                      </div>
+                      
+                </div>
+            </section>
+              
+
+        </main>
+
+    </body>
+
+    <!-- js for owl carousel -->
+    <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+    
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+
+    <script src="js/index.js"></script>
+
+    <!-- to initailize the AOS scroll effect -->
+    <script>
+        AOS.init();
+    </script>    
+
+</html>
