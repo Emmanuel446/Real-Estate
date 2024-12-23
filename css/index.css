@@ -64,7 +64,7 @@
         width: 100%;
         z-index: 1000;
         backdrop-filter: blur(5px);
-        font-family: "Poppins", sans-serif;
+        font-family: "Roboto", sans-serif;
         font-weight: 400;
         font-style: normal;
         opacity: 0.95;
@@ -92,7 +92,6 @@
         text-decoration: none;
         padding: 10px 20px;
         font-size: 16px;
-        font-weight: bold;
         display: inline-block;
         transition: color 0.3s ease;
     }
@@ -135,6 +134,7 @@
         min-width: 160px;
         box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
         z-index: 3;
+        transition: width 2s, height 4s;
     }
 
     .dropdown-links a {
@@ -146,11 +146,13 @@
     }
 
     .dropdown-links a:hover {
-        background-color: #f1f1f1;
+        padding-left: 30px;
+        transition: padding 0.3s ease;
     }
-
+    
     .dropdown:hover .dropdown-links {
         display: block;
+        padding: 25px 15px 15px 15px;
     }
 
     .nav .center {
@@ -696,8 +698,6 @@
         background-color: #eef3f8;
         color: #333;
         padding: 40px 20px;
-        font-family: Arial, sans-serif;
-        height: 55vh;
     }
 
     .footer .container {
@@ -907,7 +907,7 @@
         width: 50%;
         float: right;
         z-index: 1000;
-        font-family: "Poppins", sans-serif;
+        font-family: "Roboto", sans-serif;
         font-weight: 400;
         font-style: normal;
         padding: 10px 5px;
@@ -930,6 +930,8 @@
         z-index: 2000;
         padding: 10px 20px;
         display: block;
+        font-family: "Roboto", sans-serif;
+        font-weight: 400;
     }
 
     .nav2 i {
@@ -969,7 +971,6 @@
         text-decoration: none;
         padding: 10px 20px;
         font-size: 20px;
-        font-weight: bold;
         display: inline-block;
         transition: color 0.3s ease;
         margin: 15px 0;
@@ -1024,11 +1025,13 @@
     }
 
     .dropdown-links a:hover {
-        background-color: #f1f1f1;
+        padding-left: 30px;
+        transition: padding 0.3s ease;
     }
-
+    
     .dropdown:hover .dropdown-links {
         display: block;
+        padding: 25px 15px 15px 15px;
     }
 
     .nav .center {
@@ -1585,7 +1588,6 @@
         background-color: #eef3f8;
         color: #333;
         padding: 40px 20px;
-        font-family: Arial, sans-serif;
     }
 
     .footer .container {
@@ -1798,7 +1800,7 @@
         width: 70%;
         float: right;
         z-index: 1000;
-        font-family: "Poppins", sans-serif;
+        font-family: "Roboto", sans-serif;
         font-weight: 400;
         font-style: normal;
         padding: 10px 5px;
@@ -1823,6 +1825,8 @@
         z-index: 2000;
         padding: 10px 20px;
         display: block;
+        font-family: "Roboto", sans-serif;
+        font-weight: 400;
     }
 
     .nav2 i {
@@ -1863,7 +1867,6 @@
         text-decoration: none;
         padding: 10px 20px;
         font-size: 20px;
-        font-weight: bold;
         display: inline-block;
         transition: color 0.3s ease;
         margin: 15px 0;
@@ -1918,11 +1921,13 @@
     }
 
     .dropdown-links a:hover {
-        background-color: #f1f1f1;
+        padding-left: 30px;
+        transition: padding 0.3s ease;
     }
-
+    
     .dropdown:hover .dropdown-links {
         display: block;
+        padding: 25px 15px 15px 15px;
     }
 
     .nav .center {
@@ -2484,7 +2489,6 @@
         background-color: #eef3f8;
         color: #333;
         padding: 40px 20px;
-        font-family: Arial, sans-serif;
     }
 
     .footer .container {
