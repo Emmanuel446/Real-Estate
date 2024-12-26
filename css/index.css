@@ -17,9 +17,10 @@
     
     h1 {
         font-size: 2.5rem; 
-        font-family: "Montserrat", serif;
+        font-family: "Roboto", serif;
         font-weight: 700;
         font-style: normal;
+        color: #1877F2;
     }
     h2 {
         font-size: 2.25rem;
@@ -202,7 +203,7 @@
     /* Hero section */
 
     .hero .container {
-        background: linear-gradient(to right, rgba(0, 0, 0, 0.774), rgba(0, 0, 0, 0.5)), url('../imgs/hero3.jpg');
+        background: linear-gradient(to right, rgba(0, 0, 0, 0.774), rgba(0, 0, 0, 0.5)), url('../imgs/hero.jpg');
         background-position: center;
         background-repeat: no-repeat;
         height: 100vh;
@@ -330,7 +331,7 @@
     
     .service-wrapper hr {
         width: 7%;
-        border: 2px solid #1D4ED8;
+        border: 2px solid #1877F2;
         margin-bottom: 25px;
     }
     
@@ -400,6 +401,119 @@
         object-fit: cover;
     }
 
+    /* why choose us */
+
+    .wcu {
+        height: 80vh;
+        margin-top: 50px;
+    }
+
+    .wcu .container {
+        background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.1)), url('../imgs/real-estate.jpg');
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center;        
+        width: 100%;
+        height: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .wcu .txt-box {
+        text-align: left;
+        color: white;
+        backdrop-filter: blur(2px);
+        padding: 10px;
+        width: 50%;
+        height: 80%;
+    }
+
+    .wcu p {
+        padding: 5px 0;
+        line-height: 30px;
+    }
+
+    .wcu a {
+        background-color: #1D4ED8;
+        color: white;
+        font-size: 1rem;
+        padding: 10px 20px;
+        text-decoration: none;
+    }
+
+    .wcu a:hover {
+        opacity: 0.9;
+    }
+
+    /* wcu2 section */
+
+    .wcu2 {
+        background-color: #eef3f8;
+        height: 90vh;
+        padding: 0;
+        display: flex;
+        align-items: center;
+    }
+
+    .wcu2 .container {
+        width: 100%;
+        height: 80%;
+    }
+
+    .wcu2 .head {
+        text-align: center;
+        padding: 10px;
+    }
+
+    .wcu2 .box {
+        padding: 10px;
+        height: fit-content;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+        gap: 25px;
+    }
+    
+    .wcu2 .box .child {
+        background-color: white;
+        width: 20%;
+        min-width: 200px;
+        height: 190px;
+        padding: 10px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1), 0 1px 3px rgba(0, 0, 0, 0.06);
+    }
+
+    .wcu2 .child h1 {
+        color: #1877F2;
+        padding: 5px;
+        border-bottom: 5px solid #1877F2;
+        width: fit-content;
+        padding: 0 5px;
+        margin: 5px 0;
+        font-size: 3rem;
+    }
+
+    .wcu2 .child span {
+        padding: 5px;
+        margin: 15px 0;
+        width: 150px;
+        text-align: center;
+        text-transform: capitalize;
+    }
+
+    .wcu2 .child a {
+        text-decoration: none;
+        color: #1877F2;
+        padding: 5px;
+        text-transform: capitalize;
+    }
+
     /* get in touch */
     
     .get-in-touch .container {
@@ -412,18 +526,12 @@
         height: 100%;
         overflow: hidden;
         display: inline-block;
-        transition: transform 0.3s ease;
     }
     
-    .git-items img {
-        width: 100%;
-        height: 100%;
-        object-fit: cover;
-        transition: transform 0.3s ease;
-    }
-    
-    .git-items img:hover {
-        transform: scale(1.1);
+    .get-in-touch .bg {
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
     }
     
     .container .git-item {
@@ -445,6 +553,7 @@
         font-size: 2.3rem;
         word-wrap: break-word;
         margin: 100px 0px 50px 0px;
+        color: white;
     }
     
     .git-item p {
@@ -495,7 +604,7 @@
     
     .agents-section .container-heading hr {
         width: 7%;
-        border: 2px solid #1D4ED8;
+        border: 2px solid #1877F2;
         margin-bottom: 25px;
     }
     
@@ -538,7 +647,6 @@
     }
     
     .agents-item .agent-info i {
-        /* display: none; */
         font-size: 1.5rem;
         padding: 0px 10px;
         margin: 0 7px 10px 10px;
@@ -579,17 +687,17 @@
     
     .testimonial-section .txt hr {
         width: 7%;
-        border: 2px solid #1D4ED8;
+        border: 2px solid #1877F2;
         margin-bottom: 25px;
     }
-
+    
     .box-2 .carousel-2 {
         text-align: center;
     }
     
     .carousel-2 .item {
         box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.1), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-        height: 400px;
+        height: fit-content;
         width: 75%;
         text-align: center;
         margin: auto;
@@ -613,11 +721,16 @@
         word-wrap: break-word;
         color: #666;
     }
+
+    .carousel-2 .img-div {
+        padding: 10px;
+        width: 75%;
+    }
     
     .carousel-2 .item img {
-        height: 150px;
-        width: 150px;
-        border-radius: 150px;
+        width: 50px;
+        height: 200px;
+        border-radius: 50%;
     }
 
     /* location section */
@@ -631,6 +744,7 @@
     .faq-section {
         background-color: #fff;
         margin: 0 auto;
+        margin-bottom: 100px;
     }
     
     .faq-section .container {
@@ -858,19 +972,20 @@
     /* Mobile View for txt levels elements*/
     h1 { 
         font-size: 2.25rem;
-        font-family: "Montserrat", serif;
+        font-family: "Roboto", serif;
         font-weight: 500;
         font-style: normal;
+        color: #1877F2;
     }
     h2 {
         font-size: 2rem;
-        font-family: "Montserrat", serif;
+        font-family: "Roboto", serif;
         font-weight: 400;
         font-style: normal; 
     }
     h3 {
         font-size: 1.75rem;
-        font-family: "Montserrat", serif;
+        font-family: "Roboto", serif;
         font-weight: 400;
         font-style: normal; 
     }
@@ -1087,7 +1202,7 @@
     /* Hero section */
 
     .hero .container {
-        background: linear-gradient(to right, rgba(0, 0, 0, 0.774), rgba(0, 0, 0, 0.5)), url('/imgs/hero3.jpg');
+        background: linear-gradient(to right, rgba(0, 0, 0, 0.774), rgba(0, 0, 0, 0.5)), url('../imgs/hero.jpg');
         background-position: center;
         background-repeat: no-repeat;
         height: 60vh;
@@ -1211,7 +1326,7 @@
     
     .service-wrapper hr {
         width: 15%;
-        border: 2px solid #1D4ED8;
+        border: 2px solid #1877F2;
         margin-bottom: 25px;
     }
     
@@ -1292,30 +1407,139 @@
         height: 150px;
         object-fit: cover;
     }
+
+    /* why choose us */
+
+    .wcu {
+        height: fit-content;
+        margin-top: 50px;
+        padding: 10px 0;
+    }
+
+    .wcu .container {
+        background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.1)), url('../imgs/real-estate.jpg');
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center;        
+        width: 100%;
+        height: 100%;
+        padding: 25px 0;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .wcu .txt-box {
+        text-align: left;
+        color: white;
+        backdrop-filter: blur(2px);
+        padding: 10px;
+        width: 70%;
+        height: 70%;
+    }
+
+    .wcu p {
+        padding: 5px 0;
+        line-height: 30px;
+    }
+
+    .wcu a {
+        background-color: #1D4ED8;
+        color: white;
+        font-size: 1rem;
+        padding: 10px 20px;
+        text-decoration: none;
+    }
+
+    .wcu a:hover {
+        opacity: 0.9;
+    }
+
+    /* wcu2 section */
+
+    .wcu2 {
+        background-color: #eef3f8;
+        height: fit-content;
+        padding: 0;
+        display: flex;
+        align-items: center;
+    }
+
+    .wcu2 .container {
+        width: 100%;
+        height: fit-content;
+    }
+
+    .wcu2 .head {
+        text-align: center;
+        padding: 10px;
+    }
+
+    .wcu2 .box {
+        padding: 10px;
+        height: fit-content;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-wrap: wrap;
+        gap: 25px;
+    }
+    
+    .wcu2 .box .child {
+        background-color: white;
+        width: 20%;
+        min-width: 200px;
+        height: 190px;
+        padding: 10px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1), 0 1px 3px rgba(0, 0, 0, 0.06);
+    }
+
+    .wcu2 .child h1 {
+        color: #1877F2;
+        padding: 5px;
+        border-bottom: 5px solid #1877F2;
+        width: fit-content;
+        padding: 0 5px;
+        margin: 5px 0;
+        font-size: 3rem;
+    }
+
+    .wcu2 .child span {
+        padding: 5px;
+        margin: 15px 0;
+        width: 150px;
+        text-align: center;
+        text-transform: capitalize;
+    }
+
+    .wcu2 .child a {
+        text-decoration: none;
+        color: #1877F2;
+        padding: 5px;
+        text-transform: capitalize;
+    }
     
     /* get in touch */
     
     .get-in-touch .container {
         display: flex;
         flex-direction: row;
-        height: 40vh;
+        height: fit-content;
+        padding: 20px 0;
     }
     
     .container .git-items {
         height: 100%;
         overflow: hidden;
-        transition: transform 0.3s ease;
     }
-    
-    .git-items img {
-        height: 100%;
-        width: 100%;
-        object-fit: cover;
-        transition: transform 0.3s ease;
-    }
-    
-    .git-items img:hover {
-        transform: scale(1.1);
+
+    .get-in-touch .bg {
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
     }
     
     .container .git-item {
@@ -1337,6 +1561,7 @@
     .git-item h1 {
         word-wrap: break-word;
         margin: 32px 0px 0px 0px;
+        color: white;
     }
     
     .git-item p {
@@ -1385,7 +1610,7 @@
     
     .agents-section .container-heading hr {
         width: 10%;
-        border: 2px solid #1D4ED8;
+        border: 2px solid #1877F2;
         margin-bottom: 25px;
     }
     
@@ -1468,7 +1693,7 @@
     
     .testimonial-section .txt hr {
         width: 10%;
-        border: 2px solid #1D4ED8;
+        border: 2px solid #1877F2;
         margin-bottom: 25px;
     }
     
@@ -1478,7 +1703,7 @@
     
     .carousel-2 .item {
         box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.1), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-        height: 400px;
+        height: fit-content;
         width: 75%;
         text-align: center;
         margin: auto;
@@ -1503,10 +1728,15 @@
         color: #666;
     }
     
+    .carousel-2 .img-div {
+        padding: 10px;
+        width: 75%;
+    }
+    
     .carousel-2 .item img {
-        height: 150px;
-        width: 150px;
-        border-radius: 150px;
+        width: inherit;
+        height: 200px;
+        border-radius: 50%;
     }
 
     /* location-section */
@@ -1752,19 +1982,20 @@
     /* Mobile View for txt levels elements*/
     h1 {
         font-size: 2rem; 
-        font-family: "Montserrat", serif;
+        font-family: "Roboto", serif;
         font-weight: 700;
         font-style: normal;
+        color: #1877F2;
     }
     h2 {
          font-size: 1.75rem;
-         font-family: "Montserrat", serif;
+         font-family: "Roboto", serif;
          font-weight: 400;
          font-style: normal;
     }
     h3 {
          font-size: 1.5rem;
-         font-family: "Montserrat", serif;
+         font-family: "Roboto", serif;
          font-weight: 400;
          font-style: normal;
     }
@@ -1820,7 +2051,7 @@
     .nav2 {
         background: linear-gradient(to top, #6f95ff, #1D4ED8);
         height: 40px;
-        width: 90%;
+        width: 89.8%;
         position: absolute;
         z-index: 2000;
         padding: 10px 20px;
@@ -1983,7 +2214,7 @@
     /* Hero section */
 
     .hero .container {
-        background: linear-gradient(to right, rgba(0, 0, 0, 0.774), rgba(0, 0, 0, 0.5)), url('/imgs/hero3.jpg');
+        background: linear-gradient(to right, rgba(0, 0, 0, 0.774), rgba(0, 0, 0, 0.5)), url('../imgs/hero.jpg');
         background-repeat: no-repeat;
         background-size: cover;
         background-position: center;
@@ -2120,7 +2351,7 @@
     
     .service-wrapper hr {
         width: 20%;
-        border: 2px solid #1D4ED8;
+        border: 2px solid #1877F2;
         margin-bottom: 25px;
     }
     
@@ -2188,6 +2419,120 @@
         height: 150px;
         object-fit: cover;
     }
+
+    /* why choose us */
+
+    .wcu {
+        height: 75vh;
+        margin: 50px 0;
+    }
+
+    .wcu .container {
+        background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.1)), url('../imgs/real-estate.jpg');
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center;        
+        width: 100%;
+        height: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .wcu .txt-box {
+        text-align: left;
+        color: white;
+        backdrop-filter: blur(3px);
+        padding: 20px;
+        width: 100%;
+        height: fit-content;
+        /* border: 2px solid black; */
+    }
+
+    .wcu p {
+        padding: 5px 0;
+        line-height: 30px;
+    }
+
+    .wcu a {
+        background-color: #1D4ED8;
+        color: white;
+        font-size: 1rem;
+        padding: 10px 20px;
+        text-decoration: none;
+    }
+
+    .wcu a:hover {
+        opacity: 0.9;
+    }
+
+    /* wcu2 section */
+
+    .wcu2 {
+        background-color: #eef3f8;
+        height: fit-content;
+        padding: 0;
+        display: flex;
+        align-items: center;
+    }
+
+    .wcu2 .container {
+        width: 100%;
+        height: fit-content;
+    }
+
+    .wcu2 .head {
+        text-align: center;
+        padding: 10px;
+    }
+
+    .wcu2 .box {
+        padding: 10px;
+        height: fit-content;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        flex-wrap: wrap;
+        gap: 25px;
+    }
+    
+    .wcu2 .box .child {
+        background-color: white;
+        width: 25%;
+        min-width: 200px;
+        height: 190px;
+        padding: 10px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1), 0 1px 3px rgba(0, 0, 0, 0.06);
+    }
+
+    .wcu2 .child h1 {
+        color: #1877F2;
+        padding: 5px;
+        border-bottom: 5px solid #1877F2;
+        width: fit-content;
+        padding: 0 5px;
+        margin: 5px 0;
+        font-size: 3rem;
+    }
+
+    .wcu2 .child span {
+        padding: 5px;
+        margin: 15px 0;
+        width: 150px;
+        text-align: center;
+        text-transform: capitalize;
+    }
+
+    .wcu2 .child a {
+        text-decoration: none;
+        color: #1877F2;
+        padding: 5px;
+        text-transform: capitalize;
+    }
     
     /* get in touch */
     
@@ -2208,15 +2553,10 @@
         margin: 0;
     }
     
-    .git-items img {
-        width: 100%;;
-        height: 300px;
-        object-fit: cover;
-        transition: transform 0.3s ease;
-    }
-    
-    .git-items img:hover {
-        transform: scale(1.1);
+    .get-in-touch .bg {
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
     }
     
     .container .git-item {
@@ -2238,6 +2578,7 @@
         font-size: 2.3rem;
         word-wrap: break-word;
         margin: 50px 0px 25px 0px;
+        color: white;
     }
     
     .git-item p {
@@ -2286,7 +2627,7 @@
     
     .agents-section .container-heading hr {
         width: 20%;
-        border: 2px solid #1D4ED8;
+        border: 2px solid #1877F2;
         margin-bottom: 25px;
     }
     
@@ -2369,7 +2710,7 @@
     
     .testimonial-section .txt hr {
         width: 20%;
-        border: 2px solid #1D4ED8;
+        border: 2px solid #1877F2;
         margin-bottom: 25px;
     }
     
@@ -2379,11 +2720,11 @@
     
     .carousel-2 .item {
         box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.1), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-        height: 400px;
+        height: fit-content;
         width: 75%;
         text-align: center;
         margin: auto;
-        padding: 10px;
+        padding: 15px;
         display: flex;
         flex-direction: column;
         justify-content: center;
@@ -2403,10 +2744,15 @@
         color: #666;
     }
     
+    .carousel-2 .img-div {
+        padding: 10px;
+        width: 75%;
+    }
+    
     .carousel-2 .item img {
-        height: 150px;
-        width: 150px;
-        border-radius: 150px;
+        width: inherit;
+        height: 200px;
+        border-radius: 50%;
     }
 
     /* location-section */

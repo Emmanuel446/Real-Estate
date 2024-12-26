@@ -29,6 +29,44 @@ $('.carousel-2').owlCarousel({
   }
 });
 
+// counter
+  document.addEventListener("DOMContentLoaded", () => {
+    const counters = document.querySelectorAll('.number'); // Select only the number spans
+
+    const animateCounter = (counter) => {
+      const target = +counter.getAttribute('data-target'); // Get the target number
+      const increment = target / 100; // Adjust speed
+      let current = 0;
+
+      const updateCounter = () => {
+        current += increment;
+        if (current < target) {
+          counter.textContent = Math.ceil(current); // Update the number
+          requestAnimationFrame(updateCounter);
+        } else {
+          counter.textContent = target; // Ensure the final number is accurate
+        }
+      };
+
+      updateCounter();
+    };
+
+    // Set up Intersection Observer
+    const observer = new IntersectionObserver((entries, observer) => {
+      entries.forEach((entry) => {
+        if (entry.isIntersecting) {
+          const counter = entry.target;
+          animateCounter(counter); // Animate the counter
+          observer.unobserve(counter); // Stop observing to prevent re-triggering
+        }
+      });
+    }, { threshold: 1.0 }); // Trigger when fully in view
+
+    counters.forEach(counter => observer.observe(counter)); // Observe each counter
+  });
+
+
+
 // faq js
 
 document.querySelectorAll('.faq-question').forEach((question) => {
