@@ -12,6 +12,11 @@
     .col-10 {width: 83.33%;}
     .col-11 {width: 91.66%;}
     .col-12 {width: 100%;}
+
+    [data-aos] {
+        opacity: 1; /* Fallback visibility for slow AOS initialization */
+        transform: none; /* Fallback transform */
+    }
         
     /* Destop View for txt levels elements*/
     
@@ -24,26 +29,26 @@
     }
     h2 {
         font-size: 2.25rem;
-        font-family: "Montserrat", serif;
+        font-family: "Roboto", serif;
         font-weight: 500;
         font-style: normal; 
     }
     h3 {
         font-size: 2rem;
-        font-family: "Montserrat", serif;
+        font-family: "Roboto", serif;
         font-weight: 500;
         font-style: normal;
     }
     p {
         font-size: 1rem;
-        font-family: "Poppins", sans-serif;
+        font-family: "Roboto", serif;
         font-weight: 400;
         font-style: normal;
         word-wrap: break-word;
     }
     button {
         font-size: 1.125rem; 
-        font-family: "Poppins", sans-serif;
+        font-family: "Roboto", serif;
         font-weight: 400;
         font-style: normal;
     }
@@ -57,14 +62,13 @@
     /* nav bar */
 
     .nav {
-        background: linear-gradient(to right, #6f95ff, #1D4ED8);
+        background-color: #343A40;
+        box-shadow: 0 6px 10px rgba(0, 0, 0, 0.4);
         height: fit-content;
         padding: 10px 5px;
-        box-shadow: 0 6px 10px rgba(0, 0, 0, 0.4);
         position: fixed;
         width: 100%;
         z-index: 1000;
-        backdrop-filter: blur(5px);
         font-family: "Roboto", sans-serif;
         font-weight: 400;
         font-style: normal;
@@ -84,8 +88,8 @@
         margin: 0;
         padding: 0;
         overflow: hidden;
-        background-color: transparent;
         display: flex;
+        align-items: center;
     }
       
     li a {
@@ -104,12 +108,14 @@
         bottom: 0;
         width: 0;
         height: 2px;
-        background-color: #1D4ED8;
+        background-color: #1877F2;
         transition: width 0.3s ease;
     }
       
     li a:hover {
-        color: #1D4ED8;
+        background-color: #1877F2;
+        padding: 10px 20px;
+        color: white;
     }
 
     li .drop-btn {
@@ -121,7 +127,7 @@
     }
 
     li a:hover, .dropdown:hover .drop-btn {
-        color: #1D4ED8;
+        color: white;
     }
 
     li .dropdown {
@@ -131,7 +137,7 @@
     .dropdown-links {
         display: none;
         position: absolute;
-        background-color: #f9f9f9;
+        background-color: #343A40;
         min-width: 160px;
         box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
         z-index: 3;
@@ -139,7 +145,8 @@
     }
 
     .dropdown-links a {
-        color: black;
+        background-color: none;
+        color: white;
         padding: 12px 16px;
         text-decoration: none;
         display: block;
@@ -149,6 +156,7 @@
     .dropdown-links a:hover {
         padding-left: 30px;
         transition: padding 0.3s ease;
+        color: white;
     }
     
     .dropdown:hover .dropdown-links {
@@ -167,21 +175,53 @@
         width: fit-content;
         display: flex;
         width: 150px;
+        justify-content: center;
         align-items: center;
     }
 
-    .nav .right a {
-        background: #1877F2;
-        color: #fff;
-        font-size: 1rem;
+    .nav .right i {
         padding: 7px 14px;
-        border-style: none;
+        font-size: 1.5rem;
+        color: #fff;
         cursor: pointer;
-        font-weight: bold;
+    }
+
+    .nav .right i:hover {
+        opacity: 0.9;
+    }
+
+    .nav .right i:hover .drop-menu {
+        display: block;
+    }
+
+    .nav .right .drop-menu {
+        display: none;
+        font-family: "Roboto", serif;
+        position: absolute;
+        background-color: #343A40;
+        min-width: 50px;
+        box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+        z-index: 3;
+        content: "";
+        left: '';
+        top: 55px;
+        right: 50px;
+    }
+    
+    .nav .right a {
+        background-color: none;
+        display: block;
+        color:  #fff;
+        padding: 10px 20px;
     }
 
     .nav .right a:hover {
-        opacity: 0.8;
+        background-color: #1877F2;
+        display: block;
+        color:  #fff;
+        transition: padding, 0.3s ease-in;
+        padding: 10px 20px;
+        opacity: none;
     }
 
     .nav .logo {
@@ -249,7 +289,8 @@
     .hero .child p {
         color: #fff;
         letter-spacing: 1px;
-        margin: 5px 5px;
+        margin: 15px 5px;
+        line-height: 30px;
     }
 
     .hero .child button {
@@ -387,6 +428,7 @@
         text-wrap: wrap;
         word-wrap: break-word;
         margin: 5px 0;
+        line-height: 25px;
     }
     
     .service-item .image-div {
@@ -404,7 +446,7 @@
     /* why choose us */
 
     .wcu {
-        height: 80vh;
+        height: 85vh;
         margin-top: 50px;
     }
 
@@ -426,7 +468,11 @@
         backdrop-filter: blur(2px);
         padding: 10px;
         width: 50%;
-        height: 80%;
+        height: 75%;
+        display: flex;
+        flex-direction: column;
+        justify-content: start;
+        align-content: center;
     }
 
     .wcu p {
@@ -439,6 +485,7 @@
         color: white;
         font-size: 1rem;
         padding: 10px 20px;
+        width: fit-content;
         text-decoration: none;
     }
 
@@ -454,6 +501,7 @@
         padding: 0;
         display: flex;
         align-items: center;
+        font-family: "Roboto", serif;
     }
 
     .wcu2 .container {
@@ -486,7 +534,12 @@
         display: flex;
         flex-direction: column;
         align-items: center;
+        border: 1px solid #fff;
         box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1), 0 1px 3px rgba(0, 0, 0, 0.06);
+    }
+
+    .wcu2 .box .child:hover {
+        border: 1px solid #1877F2;
     }
 
     .wcu2 .child h1 {
@@ -529,6 +582,7 @@
     }
     
     .get-in-touch .bg {
+        background-image: url("../imgs/lets-chat.jpg");
         background-position: center;
         background-repeat: no-repeat;
         background-size: cover;
@@ -576,7 +630,7 @@
         color: #fff;
         padding: 10px 20px;
         background-color: #1D4ED8;
-        border-radius: 5px;
+        border-radius: 3px;
         font-size: 1rem;
         margin: 25px 0 50px 0;
         border: 1px solid #1D4ED8;
@@ -768,7 +822,6 @@
     .faq-section .heading h1 {
         margin: 0 0 20px 0;
         padding: 50px 0 10px 0;
-        color: #333;
     }
         
     .faq-question {
@@ -1016,7 +1069,7 @@
     /* nav bar */
 
     .nav {
-        background: linear-gradient(to top, #6f95ff, #1D4ED8);
+        background-color: #343A40;
         position: absolute;
         height: 690px;
         width: 50%;
@@ -1025,7 +1078,7 @@
         font-family: "Roboto", sans-serif;
         font-weight: 400;
         font-style: normal;
-        padding: 10px 5px;
+        padding: 50px 20px 10px 20px;
         transition: ease-in-out 0.5s;
         display: none;
     }
@@ -1033,12 +1086,13 @@
     .nav img {
         position: absolute;
         content: "";
-        top: 4%;
-        left: 85%;
+        top: 3%;
+        left: 10%;
+        /* margin: 0px 0 35px 0; */
     }
 
     .nav2 {
-        background: linear-gradient(to top, #6f95ff, #1D4ED8);
+        background-color: #343A40;
         height: 40px;
         width: 95%;
         position: absolute;
@@ -1051,7 +1105,7 @@
 
     .nav2 i {
         font-size: 1.7rem;
-        color: black;
+        color: #fff;
         margin-left: 45px;
         line-height: 40px;
         cursor: pointer;
@@ -1062,6 +1116,8 @@
         text-decoration: none;
         float: right;
         font-weight: bolder;
+        color: white;
+        padding: 5px;
     }
 
     .nav2 .logo h3 {
@@ -1163,33 +1219,68 @@
         float: right;
         width: fit-content;
         display: flex;
-        width: 110px;
-        align-items: center;
+        width: fit-content;
         justify-content: center;
+        align-items: center;
+        position: absolute;
+        top: 3%;
+        left: 75%;
     }
 
-    .nav .right a {
-        background: #1877F2;
+    .nav .right i {
+        padding: 7px 14px;
+        font-size: 1.5rem;
         color: #fff;
-        font-size: 1.2rem;
-        padding: 10px 20px;
-        border-style: none;
         cursor: pointer;
-        font-weight: bold;
+    }
+
+    .nav .right i:hover {
+        opacity: 0.9;
+    }
+
+    .nav .right i:hover .drop-menu {
+        display: block;
+    }
+
+    .nav .right .drop-menu {
+        display: none;
+        font-family: "Roboto", serif;
+        position: absolute;
+        background-color: #343A40;
+        min-width: 50px;
+        box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+        z-index: 3;
+        content: "";
+        left: '';
+        top: 40px;
+        right: 1px;
+    }
+    
+    .nav .right a {
+        background-color: none;
+        display: block;
+        color:  #fff;
+        padding: 10px 20px;
     }
 
     .nav .right a:hover {
-        opacity: 0.8;
+        background-color: #1877F2;
+        display: block;
+        color:  #fff;
+        transition: padding, 0.3s ease-in;
+        padding: 10px 20px;
+        opacity: none;
     }
 
     .nav .logo {
         float: left;
         width: fit-content;
         text-decoration: none;
-        margin: 40px 0 0 0;
+        margin: 10px 0 35px 0;
         padding: 0px 5px;
         color: white;
         font-size: bolder;
+        display: none;
     }
     
     .nav .logo h3 {
@@ -1394,6 +1485,7 @@
         text-wrap: wrap;
         word-wrap: break-word;
         margin: 5px 0;
+        line-height: 25px;
     }
     
     .service-item .image-div {
@@ -1463,6 +1555,7 @@
         padding: 0;
         display: flex;
         align-items: center;
+        font-family: "Roboto", serif;
     }
 
     .wcu2 .container {
@@ -1494,7 +1587,13 @@
         display: flex;
         flex-direction: column;
         align-items: center;
+        border: 1px solid #fff;
         box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1), 0 1px 3px rgba(0, 0, 0, 0.06);
+    }
+
+
+    .wcu2 .box .child:hover {
+        border: 1px solid #1877F2;
     }
 
     .wcu2 .child h1 {
@@ -1530,13 +1629,9 @@
         height: fit-content;
         padding: 20px 0;
     }
-    
-    .container .git-items {
-        height: 100%;
-        overflow: hidden;
-    }
 
     .get-in-touch .bg {
+        background-image: url("../imgs/lets-chat.jpg");
         background-position: center;
         background-repeat: no-repeat;
         background-size: cover;
@@ -2025,33 +2120,33 @@
 /* nav bar */
 
     .nav {
-        background: linear-gradient(to top, #6f95ff, #1D4ED8);
+        background-color: #343A40;
         position: absolute;
-        height: 690px;
-        width: 70%;
+        height: 290px;
+        width: 88.8%;
         float: right;
         z-index: 1000;
         font-family: "Roboto", sans-serif;
         font-weight: 400;
         font-style: normal;
-        padding: 10px 5px;
+        padding: 55px 20px 10px 20px;
         transition: ease-in-out 0.5s;
         display: none;
+        /* text-align: center; */
     }
 
     .nav img {
-        /* this is for the close button */
         position: absolute;
         content: "";
-        top: 4%;
-        left: 82%;
-        display: block;
+        top: 5%;
+        left: 10%;
+        /* margin: 0px 0 35px 0; */
     }
 
     .nav2 {
-        background: linear-gradient(to top, #6f95ff, #1D4ED8);
+        background-color: #343A40;
         height: 40px;
-        width: 89.8%;
+        width: 89.6%;
         position: absolute;
         z-index: 2000;
         padding: 10px 20px;
@@ -2062,8 +2157,8 @@
 
     .nav2 i {
         font-size: 1.7rem;
-        color: black;
-        margin-left: 15px;
+        color: #fff;
+        margin-left: 45px;
         line-height: 40px;
         cursor: pointer;
     }
@@ -2073,7 +2168,8 @@
         text-decoration: none;
         float: right;
         font-weight: bolder;
-        margin-top: 5px;
+        color: white;
+        padding: 5px;
     }
 
     .nav2 .logo h3 {
@@ -2175,33 +2271,68 @@
         float: right;
         width: fit-content;
         display: flex;
-        width: 110px;
-        align-items: center;
+        width: fit-content;
         justify-content: center;
+        align-items: center;
+        position: absolute;
+        top: 5%;
+        left: 75%;
     }
 
-    .nav .right a {
-        background: #1877F2;
+    .nav .right i {
+        padding: 7px 14px;
+        font-size: 1.5rem;
         color: #fff;
-        font-size: 1.2rem;
-        padding: 10px 20px;
-        border-style: none;
         cursor: pointer;
-        font-weight: bold;
+    }
+
+    .nav .right i:hover {
+        opacity: 0.9;
+    }
+
+    .nav .right i:hover .drop-menu {
+        display: block;
+    }
+
+    .nav .right .drop-menu {
+        display: none;
+        font-family: "Roboto", serif;
+        position: absolute;
+        background-color: #343A40;
+        min-width: 50px;
+        box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+        z-index: 3;
+        content: "";
+        left: '';
+        top: 40px;
+        right: 1px;
+    }
+    
+    .nav .right a {
+        background-color: none;
+        display: block;
+        color:  #fff;
+        padding: 10px 20px;
     }
 
     .nav .right a:hover {
-        opacity: 0.8;
+        background-color: #1877F2;
+        display: block;
+        color:  #fff;
+        transition: padding, 0.3s ease-in;
+        padding: 10px 20px;
+        opacity: none;
     }
 
     .nav .logo {
         float: left;
         width: fit-content;
         text-decoration: none;
-        margin: 40px 0 15px 0;
+        margin: 10px 0 35px 0;
         padding: 0px 5px;
         color: white;
         font-size: bolder;
+        display: none;
     }
     
     .nav .logo h3 {
@@ -2406,6 +2537,7 @@
         word-wrap: break-word;
         margin: 20px 0;
         padding: 0 25px;
+        line-height: 25px;
     }
     
     .service-item .image-div {
@@ -2474,6 +2606,7 @@
         padding: 0;
         display: flex;
         align-items: center;
+        font-family: "Roboto", serif;
     }
 
     .wcu2 .container {
@@ -2506,7 +2639,12 @@
         display: flex;
         flex-direction: column;
         align-items: center;
+        border: 1px solid #fff;
         box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1), 0 1px 3px rgba(0, 0, 0, 0.06);
+    }
+
+    .wcu2 .box .child:hover {
+        border: 1px solid #1877F2;
     }
 
     .wcu2 .child h1 {
@@ -2544,19 +2682,12 @@
         margin: 0;
     }
     
-    .container .git-items {
-        height: 100%;
-        overflow: hidden;
-        display: inline-block;
-        transition: transform 0.3s ease;
-        padding: 0;
-        margin: 0;
-    }
-    
     .get-in-touch .bg {
+        background-image: url("../imgs/lets-chat.jpg");
         background-position: center;
         background-repeat: no-repeat;
         background-size: cover;
+        height: 350px;
     }
     
     .container .git-item {

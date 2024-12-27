@@ -8,9 +8,12 @@
         <!-- css main file -->
         <link rel="stylesheet" href="css/index.css">
         
+        <!-- AOS CSS animation -->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css">
+        
         <!-- Font Awesome (add this to your <head>) -->
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-            
+        
         
         <!-- owl carousel -->
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css" />
@@ -24,10 +27,8 @@
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
-        
-        
-        <!-- AOS CSS animation -->
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css">
+
+        <script defer src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
 
     </head>
     <body>
@@ -66,7 +67,14 @@
                     </div>
                     
                     <div class="right">
-                        <li><a href="#">Login</a></li>
+                        <li>
+                            <i class="fa fa-user-circle-o" aria-hidden="true"><span style="color: white; padding: 5px; font-size: 1.2rem;">user</span>
+                                <div class="drop-menu">
+                                    <a href="#" class="details">Login</a>
+                                    <a href="#" class="details">Signup</a>
+                                </div>
+                            </i>
+                        </li>
                     </div>
                     
                 </ul>
@@ -77,7 +85,7 @@
             <section class="hero">
                 <div class="container col-12 col-md-12 col-sm-12">
                     <div class="child">
-                        <div class="txt" data-aos="zoom-in" data-aos-delay="500" data-aos-easing="ease-in" data-aos-duration="700">
+                        <div class="txt" data-aos="zoom-out" data-aos-delay="500" data-aos-easing="ease-in" data-aos-duration="700">
                             <h1>YOUR DREAM HOME</h1>
                             <h2>FOR SALE, RENT & LEASE</h2>
                             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Similique alias optio earum excepturi molestias, quos necessitatibus. Corrupti ut nulla ratione voluptatem!</p>
@@ -95,7 +103,7 @@
                         <h1>Our Services</h1>
                         <hr>
                     </div>
-                    <a href="#" class="service-item col-3 col-md-3 col-sm-1" data-aos="fade-up" data-aos-delay="300" data-aos-easing="ease-in" data-aos-duration="500">
+                    <a href="#" class="service-item col-3 col-md-3 col-sm-1" data-aos="fade-up" data-aos-duration="400">
                         <div class="image-div">
                                 <img src="imgs/buy2.png" alt="Buy.png">
                         </div>
@@ -115,7 +123,7 @@
                             <button>Learn more</button>
                         </div>
                     </a>
-                    <a href="#" class="service-item col-3 col-md-3 col-sm-1" data-aos="fade-up" data-aos-delay="300" data-aos-easing="ease-in" data-aos-duration="1000">
+                    <a href="#" class="service-item col-3 col-md-3 col-sm-1" data-aos="fade-up" data-aos-delay="200" data-aos-easing="ease-in" data-aos-duration="1000">
                         <div class="image-div">
                             <img src="imgs/lease-renting-2.png" alt="sell.png">
                         </div>
@@ -130,9 +138,9 @@
 
             <!-- why choose us -->
 
-            <section class="wcu col-12 col-md-12 col-sm-12" data-aos="fade-up" data-aos-delay="300" data-aos-easing="ease-in" data-aos-duration="500">
+            <section class="wcu col-12 col-md-12 col-sm-12" data-aos="slide-left" data-aos-duration="300">
                 <div class="container">
-                    <div class="txt-box" data-aos="fade-up" data-aos-delay="300" data-aos-easing="ease-in" data-aos-duration="700">
+                    <div class="txt-box" data-aos="slide-right" data-aos-delay="100" data-aos-duration="800">
                         <h1>WHY US</h1>
                         <h4>Sir Echem, <i>Manager</i></h4>
                         <p>Our consulting agency provides consulting ideas, and resources for people working to
@@ -148,34 +156,34 @@
 
             <!-- new section -->
 
-            <section class="wcu2 col-12 col-md-12 col-sm-12" data-aos="fade-up" data-aos-delay="300" data-aos-easing="ease-in" data-aos-duration="300">
+            <section class="wcu2 col-12 col-md-12 col-sm-12" data-aos="zoom-in" data-aos-duration="100">
                 <div class="container">
                     <div class="head">
                         <h1>What Set's Us Apart</h1>
                     </div>
                     <div class="box">
-                        <div class="child" data-aos="fade-up" data-aos-delay="300" data-aos-easing="ease-in" data-aos-duration="600">
+                        <div class="child" data-aos="slide-right" data-aos-duration="800">
                             <h1 class="h1">
                                 <span class="number" data-target="15">0</span>
                             </h1>
                             <span>years we've been in business</span>
                             <a href="#">read our story</a>
                         </div>
-                        <div class="child" data-aos="fade-up" data-aos-delay="300" data-aos-easing="ease-in" data-aos-duration="700">
+                        <div class="child" data-aos="slide-right" data-aos-duration="700">
                             <h1 class="h1">
                                 <span class="number" data-target="3500">0</span>
                             </h1>
                             <span>units we are currenly managing</span>
                             <a href="#">see our listings</a>
                         </div>
-                        <div class="child" data-aos="fade-up" data-aos-delay="300" data-aos-easing="ease-in" data-aos-duration="800">
+                        <div class="child" data-aos="slide-right" data-aos-duration="500">
                             <h1 class="h1">
                                 <span class="number" data-target="100">0</span>+
                             </h1>
                             <span>years we've been In business</span>
                             <a href="#">Read Our Story</a>                                                            
                         </div>
-                        <div class="child" data-aos="fade-up" data-aos-delay="300" data-aos-easing="ease-in" data-aos-duration="1000">
+                        <div class="child" data-aos="slide-right" data-aos-duration="300">
                             <h1 class="h1">
                                 <span class="number" data-target="50">0</span>+
                             </h1>
@@ -188,10 +196,10 @@
             
             <!-- get in touch section -->
             <section class="get-in-touch col-12 col-md-12 col-sm-12">
-                <div class="container col-12 col-md-12 col-sm-12" data-aos="fade-up" data-aos-delay="300" data-aos-easing="ease-in" data-aos-duration="1000">
-                    <div class="git-items bg col-7 col-md-7 col-sm-12" style="background-image: url(imgs/lets-chat.jpg);"></div>
-                    <div class="git-items git-item col-5 col-md-7 col-sm-12">
-                        <div class="text col-9 col-md-9 col-sm-9">
+                <div class="container col-12 col-md-12 col-sm-12" data-aos="fade-up" data-aos-duration="500">
+                    <div class="bg col-7 col-md-7 col-sm-12"></div>
+                    <div class="git-item col-5 col-md-7 col-sm-12">
+                        <div class="text col-9 col-md-9 col-sm-9" data-aos="zoom-in" data-aos-duration="600">
                             <h1>"We Understand Your Needs, Let Us Guide You Home".</h1>
                             <p>
                                 <i class="fa fa-circle" aria-hidden="true"></i>Ready for a stress-free real estate journey?
@@ -218,7 +226,7 @@
                     </div>
 
                    <div class="agents-wrapper col-12 col-md-12 col-sm-12">
-                        <div class="agents-item  col-3 col-md-3 col-sm-4" data-aos="fade-up" data-aos-delay="300" data-aos-easing="ease-in" style="background-image: url(imgs/sales-agent-1.jpg);">
+                        <div class="agents-item  col-3 col-md-3 col-sm-4" data-aos="fade-up" data-aos-delay="300" data-aos-duration="500" style="background-image: url(imgs/sales-agent-1.jpg);">
                             <!-- <span>Sir Echem</span> -->
                             <div class="agent-info">
                                 <p class="agent-name">Agent Name</p>
@@ -230,7 +238,7 @@
                             </div>
                         </div>
 
-                        <div class="agents-item col-3 col-md-3 col-sm-4" data-aos="fade-up" data-aos-delay="300" data-aos-easing="ease-in" data-aos-duration="800" style="background-image: url(imgs/sales-agent-2.jpg);">
+                        <div class="agents-item col-3 col-md-3 col-sm-4" data-aos="fade-up" data-aos-delay="300" data-aos-duration="400" style="background-image: url(imgs/sales-agent-2.jpg);">
                             <div class="agent-info">
                                 <p class="agent-name">Agent Name</p>
                                 <div class="social-links">
@@ -240,7 +248,7 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="agents-item col-3 col-md-3 col-sm-4" data-aos="fade-up" data-aos-delay="300" data-aos-easing="ease-in" data-aos-duration="1000" style="background-image: url(imgs/sales-agent-3.jpg)">
+                        <div class="agents-item col-3 col-md-3 col-sm-4" data-aos="fade-up" data-aos-delay="300" data-aos-duration="300" style="background-image: url(imgs/sales-agent-3.jpg)">
                             <div class="agent-info">
                                 <p class="agent-name">Agent Name</p>
                                 <div class="social-links">
@@ -260,7 +268,7 @@
                 
                 <div class="container col-12 col-md-12 col-sm-12">
 
-                    <div class="box-1 col-12 col-md-12 col-sm-12" data-aos="fade-up" data-aos-delay="300" data-aos-easing="ease-in" data-aos-duration="800">
+                    <div class="box-1 col-12 col-md-12 col-sm-12" data-aos="fade-up" data-aos-duration="100">
                         <div class="txt col-12 col-md-12 col-sm-12">
                             <h1>Testimonials</h1>
                             <hr>
@@ -270,7 +278,7 @@
                     <div class="box-2 col-12 col-md-12 col-sm-12">
     
                         <div class="carousel-2 owl-carousel owl-theme col-12 col-md-12 col-sm-12">
-                            <div class="item"  data-aos="fade-up" data-aos-delay="300" data-aos-easing="ease-in" data-aos-duration="500">
+                            <div class="item"  data-aos="fade-in"  data-aos-duration="600">
                                 <div class="img-div">
                                     <img src="imgs/agent.png" alt="">
                                 </div>
@@ -279,7 +287,7 @@
                                     Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex, sunt expedita commodi aperiam fugit dolor aspernatur labore asperiores modi veniam, iusto neque illum iste ipsum harum earum fugiat. Laudantium, neque.
                                 </p>
                             </div>
-                            <div class="item"  data-aos="fade-up" data-aos-delay="300" data-aos-easing="ease-in" data-aos-duration="800">
+                            <div class="item"  data-aos="fade-in" data-aos-duration="600">
                                 <div class="img-div">
                                     <img src="imgs/agent.png" alt="">
                                 </div>
@@ -288,7 +296,7 @@
                                     Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex, sunt expedita commodi aperiam fugit dolor aspernatur labore asperiores modi veniam, iusto neque illum iste ipsum harum earum fugiat. Laudantium, neque.
                                 </p>
                             </div>
-                            <div class="item" data-aos="fade-up" data-aos-delay="300" data-aos-easing="ease-in" data-aos-duration="1000">
+                            <div class="item" data-aos="fade-in" data-aos-duration="600">
                                 <div class="img-div">
                                     <img src="imgs/agent.png" alt="">
                                 </div>
@@ -305,18 +313,18 @@
 
             <!-- location -->
 
-            <section class="location col-12 col-md-12 col-sm-12" data-aos="fade-up" data-aos-delay="300" data-aos-easing="ease-in" data-aos-duration="500">
+            <section class="location col-12 col-md-12 col-sm-12" data-aos="fade-up" data-aos-duration="500">
                 <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3975.8276340755347!2d6.998372474152611!3d4.799627895175787!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1069ce9916e52ea1%3A0xb2fcd0d9cd360047!2sNIIT%20Port%20Harcourt!5e0!3m2!1sen!2sng!4v1732316089363!5m2!1sen!2sng" width="100%" height="600" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
             </section>
 
             <!-- faq section -->
             <section class="faq-section col-12 col-md-12 col-sm-12">
                 
-                <div class="heading"  data-aos="fade-up" data-aos-delay="300" data-aos-easing="ease-in" data-aos-duration="500">
+                <div class="heading"  data-aos="fade-up" data-aos-duration="200">
                     <h1>Frequently Asked Questions</h1>
                 </div>
                 
-                <div class="container"  data-aos="fade-up" data-aos-delay="300" data-aos-easing="ease-in" data-aos-duration="800">
+                <div class="container"  data-aos="fade-up" data-aos-duration="300">
                     <div class="faq-item">
                         <button class="faq-question">What services do you offer?
                         <img src="imgs/plus.png" class="icon">
@@ -354,10 +362,10 @@
             </section>
 
             <!-- Footer Section -->
-            <footer class="footer" data-aos="fade-up" data-aos-delay="300" data-aos-easing="ease-in" data-aos-duration="500">
+            <footer class="footer" data-aos="fade-up" data-aos-easing="ease-in" data-aos-duration="200">
                 <div class="container">
                     <!-- Top Section -->
-                    <div class="footer-top row" data-aos="fade-up" data-aos-delay="300" data-aos-easing="ease-in" data-aos-duration="700">
+                    <div class="footer-top row" data-aos="fade-up" data-aos-easing="ease-in" data-aos-duration="400">
                         <!-- Left Side -->
                         <div class="footer-left col-12 col-md-6">
                             <h2 class="cta-statement">Looking to buy, sell, or rent a house? Contact us!</h2>
@@ -367,7 +375,7 @@
                             </form>
                         </div>
                         <!-- Right Side -->
-                        <div class="footer-right col-12 col-md-6" data-aos="fade-up" data-aos-delay="300" data-aos-easing="ease-in" data-aos-duration="900">
+                        <div class="footer-right col-12 col-md-6" data-aos="fade-up" data-aos-easing="ease-in" data-aos-duration="200">
                             <h4>About Us</h4>
                             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Deserunt reprehenderit facilis ducimus at molestiae sunt, neque quae autem! Hic distinctio impedit ex nobis corporis cum delectus, eaque enim at facilis?</p>
                             <h4>Contact Info</h4>
@@ -395,7 +403,7 @@
 
                     </div>
                     <!-- Bottom Section -->
-                    <div class="footer-bottom" data-aos="fade-up" data-aos-delay="300" data-aos-easing="ease-in" data-aos-duration="1000">
+                    <div class="footer-bottom" data-aos="fade-up" data-aos-easing="ease-in" data-aos-duration="300">
                         <p>&copy; 2024 Real Estate. All rights reserved. | Designed by Emmanuel</p>
                     </div>
                 </div>
@@ -415,12 +423,27 @@
 
     <!-- AOS JavaScript animation -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
+    
+    <!-- refresh AOS before once site is fully loaded -->
+    <script>
+        window.addEventListener('load', () => {
+            AOS.refresh();
+        });
+    </script>
 
     <!-- to initailize the AOS scroll effect -->
     <script>
-        AOS.init({
-            once: true
+        window.addEventListener('load', () => {
+          AOS.init({
+            offset: 120,
+            delay: 0,
+            duration: 800,
+            easing: 'ease-in-out',
+            once: true,
+            // disable: 'mobile',
+          });
         });
-    </script>    
+      </script>
+    
 
 </html>
