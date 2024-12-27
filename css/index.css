@@ -2156,7 +2156,7 @@
     .nav2 {
         background-color: #343A40;
         height: 40px;
-        width: 90%;
+        width: 89.5%;
         position: absolute;
         z-index: 2000;
         padding: 10px 20px;
@@ -2286,7 +2286,7 @@
         align-items: center;
         position: absolute;
         top: 5%;
-        left: 75%;
+        left: 70%;
     }
 
     .nav .right i {
@@ -2841,17 +2841,17 @@
         display: flex;
         justify-content: center;
         align-items: center;
-        margin: 20px 0;
+        margin: 35px 0 35px 0;
     }
-    
+
     .testimonial-section .txt {
         color: #333;
         text-align: center;
     }
     
     .testimonial-section .txt hr {
-        width: 20%;
-        border: 2px solid #1877F2;
+        width: 10%;
+        border: 2px solid #1D4ED8;
         margin-bottom: 25px;
     }
     
@@ -2861,21 +2861,22 @@
     
     .carousel-2 .item {
         box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.1), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-        height: fit-content;
+        height: 400px;
         width: 75%;
         text-align: center;
         margin: auto;
-        padding: 15px;
+        padding: 10px;
         display: flex;
         flex-direction: column;
         justify-content: center;
         align-items: center;
+    
     }
     
     .carousel-2 .item span {
         margin: 15px 0 10px 0;
         font-weight: 600;
-        color: #1D4ED8;
+        color: #1877F2;
     }
     
     .carousel-2 .item p {
@@ -2885,15 +2886,10 @@
         color: #666;
     }
     
-    .carousel-2 .img-div {
-        padding: 10px;
-        width: 75%;
-    }
-    
     .carousel-2 .item img {
-        width: inherit;
-        height: 200px;
-        border-radius: 50%;
+        height: 150px;
+        width: 150px;
+        border-radius: 150px;
     }
 
     /* location-section */
@@ -2923,9 +2919,11 @@
     }
 
     .faq-section .heading {
-        width:90%;
+        width:100%;
+        text-align: center;
         margin: 0 0 20px 0;
         text-align: center;
+        color: #1877F2;
     }
 
     .faq-section .heading h1 {

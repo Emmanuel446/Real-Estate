@@ -4,27 +4,20 @@ $('.carousel-2').owlCarousel({
   loop:true,
   margin:20,
   autoplay:true,
-  center:true,
   autoplayTimeout:4500,
   responsiveClass:true,
   responsive:{
       0:{
           items:1,
           nav:false,
-          loop:true,
-          autoplay:true
       },
       600:{
           items:2,
           nav:false,
-          loop:true,
-          autoplay:true
       },
       1000:{
           items:3,
           nav:false,
-          loop:true,
-          autoplay:true
       }
   }
 });
