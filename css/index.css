@@ -1021,6 +1021,11 @@
     .col-md-10 {width: 83.33%;}
     .col-md-11 {width: 91.66%;}
     .col-md-12 {width: 100%;}
+
+    [data-aos] {
+        opacity: 1; /* Fallback visibility for slow AOS initialization */
+        transform: none; /* Fallback transform */
+    }
     
     /* Mobile View for txt levels elements*/
     h1 { 
@@ -1094,7 +1099,7 @@
     .nav2 {
         background-color: #343A40;
         height: 40px;
-        width: 95%;
+        width: 94.4%;
         position: absolute;
         z-index: 2000;
         padding: 10px 20px;
@@ -1106,7 +1111,7 @@
     .nav2 i {
         font-size: 1.7rem;
         color: #fff;
-        margin-left: 45px;
+        margin-left: 40px;
         line-height: 40px;
         cursor: pointer;
     }
@@ -2060,7 +2065,7 @@
 
 }
 
-@media (max-width: 767px) {
+@media (max-width: 750px) {
     .col-sm-1 {width: 8.33%;}
     .col-sm-2 {width: 16.66%;}
     .col-sm-3 {width: 25%;}
@@ -2073,6 +2078,11 @@
     .col-sm-10 {width: 83.33%;}
     .col-sm-11 {width: 91.66%;}
     .col-sm-12 {width: 100%;}
+
+    [data-aos] {
+        opacity: 1; /* Fallback visibility for slow AOS initialization */
+        transform: none; /* Fallback transform */
+    }
     
     /* Mobile View for txt levels elements*/
     h1 {
@@ -2146,7 +2156,7 @@
     .nav2 {
         background-color: #343A40;
         height: 40px;
-        width: 89.6%;
+        width: 94.5%;
         position: absolute;
         z-index: 2000;
         padding: 10px 20px;
@@ -2158,7 +2168,7 @@
     .nav2 i {
         font-size: 1.7rem;
         color: #fff;
-        margin-left: 45px;
+        margin-left: 10px;
         line-height: 40px;
         cursor: pointer;
     }
