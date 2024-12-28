@@ -93,18 +93,8 @@ document.querySelectorAll('.faq-question').forEach((question) => {
     // If the question wasn't active, toggle its visibility
     if (!isActive) {
       question.classList.add('active');
-      answer.style.display = 'block'; // Show the corresponding answer
+      answer.style.display = 'block';
     }
-  });
-});
-
-// Close FAQs when clicking outside
-document.addEventListener('click', () => {
-  document.querySelectorAll('.faq-answer').forEach((answer) => {
-    answer.style.display = 'none'; // Hide all answers
-  });
-  document.querySelectorAll('.faq-question').forEach((q) => {
-    q.classList.remove('active'); // Remove active class
   });
 });
 
@@ -121,24 +111,24 @@ faqQuestions.forEach((question) => {
     // Toggle logic for the clicked question
     const answer = question.nextElementSibling;
     const icon = question.querySelector('.icon');
-    const isAnswerVisible = answer.style.display === 'block'; // Check if already open
+    const isAnswerVisible = answer.style.display === 'block';
 
     // Close all answers and reset icons, background color, and text color
     faqQuestions.forEach((q) => {
       const siblingAnswer = q.nextElementSibling;
       const siblingIcon = q.querySelector('.icon');
-      siblingAnswer.style.display = 'none'; // Hide all answers
-      if (siblingIcon) siblingIcon.style.transform = 'rotate(0deg)'; // Reset all icons
-      q.style.backgroundColor = ''; // Reset background color
-      q.style.color = 'black'; // Reset text color
+      siblingAnswer.style.display = 'none'; 
+      if (siblingIcon) siblingIcon.style.transform = 'rotate(0deg)';
+      q.style.backgroundColor = '';
+      q.style.color = 'black';
     });
 
     // Toggle the clicked question's state
     if (!isAnswerVisible) {
-      answer.style.display = 'block'; // Show current answer
-      if (icon) icon.style.transform = 'rotate(45deg)'; // Rotate current icon
-      question.style.backgroundColor = '#1877F2'; // Set background color of clicked question
-      question.style.color = 'white'; // Set text color to white
+      answer.style.display = 'block'; 
+      if (icon) icon.style.transform = 'rotate(45deg)';
+      question.style.backgroundColor = '#1877F2';
+      question.style.color = 'white';
     }
   });
 });
@@ -148,9 +138,158 @@ document.addEventListener('click', () => {
   faqQuestions.forEach((q) => {
     const answer = q.nextElementSibling;
     const icon = q.querySelector('.icon');
-    answer.style.display = 'none'; // Hide all answers
-    if (icon) icon.style.transform = 'rotate(0deg)'; // Reset all icons
-    q.style.backgroundColor = ''; // Reset background color
-    q.style.color = 'black'; // Reset text color to black
+    answer.style.display = 'none';
+    if (icon) icon.style.transform = 'rotate(0deg)';
+    q.style.backgroundColor = '';
+    q.style.color = 'black';
   });
+});
+
+
+// Initialize ScrollReveal
+window.sr = ScrollReveal();
+
+ScrollReveal().reveal('#hero-section', {
+  delay: 200,   
+  duration: 1000,
+  scale: 0.6,     
+  easing: 'ease-in-out',
+  opacity: 0,        
+  reset: true,  
+  distance: '25px'
+});
+
+ScrollReveal().reveal('#service', {
+  delay: 200,
+  duration: 800,
+  opacity: 0,
+  distance: '100px',
+  easing: 'ease-out',
+  interval: 250, // Adjust to stagger the animations
+  reset: true,
+});
+
+ScrollReveal().reveal('#why-us-section', {
+  delay: 200,        
+  duration: 600,
+  opacity: 0,     
+  distance: '200px',
+  origin: 'left',    
+  easing: 'ease-out',
+  reset: true,   
+});
+
+ScrollReveal().reveal('#why-us-manager', {
+  delay: 200,        
+  duration: 600,
+  opacity: 0,
+  distance: '200px', 
+  origin: 'left',    
+  easing: 'ease-out',
+  reset: true,  
+});
+
+ScrollReveal().reveal('#why-us-description', {
+  delay: 200,        
+  duration: 600,
+  opacity: 0,
+  distance: '200px', 
+  origin: 'right',    
+  easing: 'ease-out',
+  reset: true,  
+});
+
+ScrollReveal().reveal('#why-us-readmore', {
+  delay: 200,        
+  duration: 600,
+  opacity: 0,
+  distance: '150px', 
+  origin: 'right',    
+  easing: 'ease-out',
+  reset: true,  
+});
+
+ScrollReveal().reveal('#business', {
+  delay: 200,           
+  duration: 1000,   
+  opacity: 0,      
+  distance: '50px', 
+  origin: 'bottom',  
+  rotate: {            
+      x: 0,             
+      y: 180,        
+      z: 0              
+  },
+  easing: 'ease-out',
+  reset: true,     
+});
+
+ScrollReveal().reveal('#get-in-touch', {
+  delay: 200,           
+  duration: 800,   
+  opacity: 0,   
+  distance: '200px',
+  origin: 'bottom', 
+  easing: 'ease-out',   
+  reset: false,     
+});
+
+ScrollReveal().reveal('#git-text', {
+  delay: 200,        
+  duration: 1000,
+  scale: 0.7,         
+  easing: 'ease-in-out',
+  opacity: 0,        
+  reset: true,      
+  distance: '20px',
+  origin: 'top',
+});
+
+ScrollReveal().reveal('#location-section', {
+  delay: 200,        
+  duration: 1000,
+  opacity: 0,
+  distance: '150px',   
+  origin: 'bottom',     
+  easing: 'ease-out',  
+  reset: false, 
+});
+
+ScrollReveal().reveal('.faq-item', {
+  opacity: 0,         
+  y: 50,                 
+  duration: 1.2,
+  delay: 200,          
+  easing: 'ease-out', 
+  interval: 100,             
+  distance: '50px',
+  origin: 'bottom',       
+});
+
+ScrollReveal().reveal('#footer-section', {
+  delay: 200,           
+  duration: 800,
+  opacity: 0,          
+  scale: 0.5,           
+  origin: 'bottom',
+  easing: 'ease-out',  
+  reset: true,
+});
+
+ScrollReveal().reveal('#nav', {
+  origin: 'top', 
+  distance: '100px',
+  duration: 800,     
+  delay: 300,           
+  easing: 'ease-in-out',
+  reset: false,
+});
+
+ScrollReveal().reveal('nav2', {
+  origin: 'top', 
+  distance: '100px',
+  duration: 800,     
+  delay: 300,         
+  easing: 'ease-in-out',
+  reset: false,
 });

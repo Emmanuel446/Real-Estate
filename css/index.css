@@ -12,11 +12,6 @@
     .col-10 {width: 83.33%;}
     .col-11 {width: 91.66%;}
     .col-12 {width: 100%;}
-
-    [data-aos] {
-        opacity: 1; /* Fallback visibility for slow AOS initialization */
-        transform: none; /* Fallback transform */
-    }
         
     /* Destop View for txt levels elements*/
     
@@ -72,7 +67,6 @@
         font-family: "Roboto", sans-serif;
         font-weight: 400;
         font-style: normal;
-        opacity: 0.95;
     }
 
     .nav img {
@@ -237,6 +231,7 @@
         font-size: 2rem;
         margin: 0;
         padding: 0;
+        color: white;
     }
       
 
@@ -721,6 +716,7 @@
     /* testimonials section */
     
     .testimonial-section .container {
+        font-family: "Roboto", serif;
         display: flex;
         height: fit-content;
         flex-direction: column;
@@ -735,7 +731,7 @@
     }
     
     .testimonial-section .txt {
-        color: #333;
+        color: #1877F2;
         text-align: center;
     }
     
@@ -763,10 +759,11 @@
     
     }
     
-    .carousel-2 .item span {
+    .carousel-2 .item .customer-name {
+        font-size: 1.5rem;
         margin: 15px 0 10px 0;
         font-weight: 600;
-        color: #1D4ED8;
+        color: #1877F2;
     }
     
     .carousel-2 .item p {
@@ -778,14 +775,18 @@
 
     .carousel-2 .img-div {
         padding: 10px;
-        width: 75%;
+        width: 200px;
     }
     
     .carousel-2 .item img {
-        width: 50px;
         height: 200px;
+        width: 200px;
         border-radius: 50%;
+        object-fit: cover;
+        display: block;
+        margin: 0 auto;
     }
+    
 
     /* location section */
 
@@ -928,18 +929,17 @@
     }
 
     .footer .uls2 {
-        /* border: 2px solid black; */
         padding: 5px 5px 5px 0px;
         display: flex;
         flex-direction: row;
         flex-wrap: wrap;
-        cursor: pointer;
     }
 
     .footer .uls2 span {
         padding: 5px 10px;
         cursor: pointer;
         font-size: 1rem;
+        cursor: pointer;
     }
 
     .footer .uls2 i {
@@ -1021,11 +1021,6 @@
     .col-md-10 {width: 83.33%;}
     .col-md-11 {width: 91.66%;}
     .col-md-12 {width: 100%;}
-
-    [data-aos] {
-        opacity: 1; /* Fallback visibility for slow AOS initialization */
-        transform: none; /* Fallback transform */
-    }
     
     /* Mobile View for txt levels elements*/
     h1 { 
@@ -1084,7 +1079,6 @@
         font-weight: 400;
         font-style: normal;
         padding: 50px 20px 10px 20px;
-        transition: ease-in-out 0.5s;
         display: none;
     }
 
@@ -1773,6 +1767,7 @@
     /* testimonials section */
     
     .testimonial-section .container {
+        font-family: "Roboto", serif;
         display: flex;
         height: fit-content;
         flex-direction: column;
@@ -1787,7 +1782,7 @@
     }
 
     .testimonial-section .txt {
-        color: #333;
+        color: #1877F2;
         text-align: center;
     }
     
@@ -1815,10 +1810,10 @@
     
     }
     
-    .carousel-2 .item span {
+    .carousel-2 .item .customer-name {
         margin: 15px 0 10px 0;
         font-weight: 600;
-        color: #1D4ED8;
+        color: #1877F2;
     }
     
     .carousel-2 .item p {
@@ -1830,13 +1825,16 @@
     
     .carousel-2 .img-div {
         padding: 10px;
-        width: 75%;
+        width: 200px;
     }
     
     .carousel-2 .item img {
-        width: inherit;
         height: 200px;
+        width: 200px;
         border-radius: 50%;
+        object-fit: cover;
+        display: block;
+        margin: 0 auto;
     }
 
     /* location-section */
@@ -1995,13 +1993,13 @@
         display: flex;
         flex-direction: row;
         flex-wrap: wrap;
-        cursor: pointer;
     }
 
     .footer .uls2 span {
         padding: 5px 10px;
         cursor: pointer;
         font-size: 1rem;
+        cursor: pointer;
     }
 
     .footer .uls2 i {
@@ -2078,11 +2076,6 @@
     .col-sm-10 {width: 83.33%;}
     .col-sm-11 {width: 91.66%;}
     .col-sm-12 {width: 100%;}
-
-    [data-aos] {
-        opacity: 1; /* Fallback visibility for slow AOS initialization */
-        transform: none; /* Fallback transform */
-    }
     
     /* Mobile View for txt levels elements*/
     h1 {
@@ -2828,9 +2821,10 @@
         color: #1877F2;
     }
     
-    /* testimonials section */
+        /* testimonials section */
     
     .testimonial-section .container {
+        font-family: "Roboto", serif;
         display: flex;
         height: fit-content;
         flex-direction: column;
@@ -2845,13 +2839,13 @@
     }
 
     .testimonial-section .txt {
-        color: #333;
+        color: #1877F2;
         text-align: center;
     }
     
     .testimonial-section .txt hr {
         width: 10%;
-        border: 2px solid #1D4ED8;
+        border: 2px solid #1877F2;
         margin-bottom: 25px;
     }
     
@@ -2870,10 +2864,10 @@
         flex-direction: column;
         justify-content: center;
         align-items: center;
-    
     }
+      
     
-    .carousel-2 .item span {
+    .carousel-2 .item .customer-name {
         margin: 15px 0 10px 0;
         font-weight: 600;
         color: #1877F2;
@@ -2886,10 +2880,18 @@
         color: #666;
     }
     
+    .carousel-2 .img-div {
+        padding: 10px;
+        width: 200px;
+    }
+    
     .carousel-2 .item img {
-        height: 150px;
-        width: 150px;
-        border-radius: 150px;
+        height: 200px;
+        width: 200px;
+        border-radius: 50%;
+        object-fit: cover;
+        display: block;
+        margin: 0 auto;
     }
 
     /* location-section */
@@ -2929,7 +2931,7 @@
     .faq-section .heading h1 {
         margin: 0 0 20px 0;
         padding: 50px 0 10px 0;
-        color: #333;
+        color: #1877F2;
         font-size: 1.8rem;
     }
         
@@ -3037,18 +3039,17 @@
     }
 
     .footer .uls2 {
-        /* border: 2px solid black; */
         padding: 5px 5px 5px 0px;
         display: flex;
         flex-direction: row;
         flex-wrap: wrap;
-        cursor: pointer;
     }
 
     .footer .uls2 span {
         padding: 5px 10px;
         cursor: pointer;
         font-size: 1rem;
+        cursor: pointer;
     }
 
     .footer .uls2 i {
