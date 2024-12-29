@@ -284,12 +284,3 @@ ScrollReveal().reveal('#nav', {
   easing: 'ease-in-out',
   reset: false,
 });
-
-ScrollReveal().reveal('nav2', {
-  origin: 'top', 
-  distance: '100px',
-  duration: 800,     
-  delay: 300,         
-  easing: 'ease-in-out',
-  reset: false,
-});
