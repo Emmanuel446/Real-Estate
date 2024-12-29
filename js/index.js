@@ -276,11 +276,11 @@ ScrollReveal().reveal('#footer-section', {
   reset: true,
 });
 
-ScrollReveal().reveal('#nav', {
-  origin: 'top', 
-  distance: '100px',
-  duration: 800,     
-  delay: 300,           
-  easing: 'ease-in-out',
-  reset: false,
-});
+// ScrollReveal().reveal('#nav', {
+//   origin: 'top', 
+//   distance: '100px',
+//   duration: 800,     
+//   delay: 300,           
+//   easing: 'ease-in-out',
+//   reset: false,
+// });
