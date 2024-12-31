@@ -160,8 +160,8 @@ ScrollReveal().reveal('#hero-section', {
 });
 
 ScrollReveal().reveal('#service', {
-  delay: 200,
-  duration: 800,
+  delay: 150,
+  duration: 300,
   opacity: 0,
   distance: '100px',
   easing: 'ease-out',

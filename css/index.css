@@ -67,6 +67,7 @@
         font-family: "Roboto", sans-serif;
         font-weight: 400;
         font-style: normal;
+        text-transform: uppercase;
     }
 
     .nav img {
@@ -90,7 +91,7 @@
         color: white;
         text-decoration: none;
         padding: 10px 20px;
-        font-size: 16px;
+        font-size: 1rem;
         display: inline-block;
         transition: color 0.3s ease;
     }
@@ -446,7 +447,7 @@
     }
 
     .wcu .container {
-        background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.1)), url('../imgs/real-estate.jpg');
+        background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.1)), url('../imgs/real-estate.jpeg');
         background-size: cover;
         background-repeat: no-repeat;
         background-position: center;        
@@ -669,9 +670,6 @@
     }
     
     .agents-wrapper .agents-item {
-        background-position: center;
-        background-repeat: no-repeat;
-        background-size: cover;
         box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.1), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
         height: 400px;
         display: flex;
@@ -679,6 +677,27 @@
         align-items: flex-end;
         position: relative;
         min-width: 300px;
+    }
+
+    .agents-section .agt1 {
+        background-image: url('../imgs/sales-agent-1.jpeg');
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+
+    .agents-section .agt2 {
+        background-image: url('../imgs/sales-agent-2.jpeg');
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+
+    .agents-section .agt3 {
+        background-image: url('../imgs/sales-agent-3.jpeg');
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
     }
     
     .agents-item .agent-info {
@@ -1081,6 +1100,7 @@
         font-style: normal;
         padding: 50px 20px 10px 20px;
         display: none;
+        text-transform: uppercase;
     }
 
     .nav img {
@@ -1101,6 +1121,7 @@
         display: block;
         font-family: "Roboto", sans-serif;
         font-weight: 400;
+        text-transform: uppercase;
     }
 
     .nav2 i {
@@ -1509,7 +1530,7 @@
     }
 
     .wcu .container {
-        background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.1)), url('../imgs/real-estate.jpg');
+        background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.1)), url('../imgs/real-estate.jpeg');
         background-size: cover;
         background-repeat: no-repeat;
         background-position: center;        
@@ -1720,15 +1741,33 @@
     }
     
     .agents-wrapper .agents-item {
-        background-position: center;
-        background-repeat: no-repeat;
-        background-size: cover;
         height: 400px;
         min-width: 250px;
         display: flex;
         justify-content: center;
         align-items: flex-end;
         position: relative;
+    }
+
+    .agents-section .agt1 {
+        background-image: url('../imgs/sales-agent-1.jpg');
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+
+    .agents-section .agt2 {
+        background-image: url('../imgs/sales-agent-2.jpg');
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+
+    .agents-section .agt3 {
+        background-image: url('../imgs/sales-agent-3.jpg');
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
     }
     
     .agents-item .agent-info {
@@ -2136,6 +2175,8 @@
         padding: 55px 20px 10px 20px;
         transition: ease-in-out 0.5s;
         display: none;
+        text-transform: uppercase;
+
         /* text-align: center; */
     }
 
@@ -2157,6 +2198,7 @@
         display: block;
         font-family: "Roboto", sans-serif;
         font-weight: 400;
+        text-transform: uppercase;
     }
 
     .nav2 i {
@@ -2564,7 +2606,7 @@
     }
 
     .wcu .container {
-        background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.1)), url('../imgs/real-estate.jpg');
+        background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.1)), url('../imgs/real-estate.jpeg');
         background-size: cover;
         background-repeat: no-repeat;
         background-position: center;        
@@ -2777,15 +2819,33 @@
     }
     
     .agents-wrapper .agents-item {
-        background-position: center;
-        background-repeat: no-repeat;
-        background-size: cover;
         height: 400px;
         min-width: 300px;
         display: flex;
         justify-content: center;
         align-items: flex-end;
         position: relative;
+    }
+
+    .agents-section .agt1 {
+        background-image: url('../imgs/sales-agent-1.jpg');
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+
+    .agents-section .agt2 {
+        background-image: url('../imgs/sales-agent-2.jpg');
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+
+    .agents-section .agt3 {
+        background-image: url('../imgs/sales-agent-3.jpg');
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
     }
 
     .agents-item .agent-info {
@@ -2883,12 +2943,12 @@
     
     .carousel-2 .img-div {
         padding: 10px;
-        width: 200px;
+        width: 170px;
     }
     
     .carousel-2 .item img {
-        height: 200px;
-        width: 200px;
+        height: 170px;
+        width: 170px;
         border-radius: 50%;
         object-fit: cover;
         display: block;
